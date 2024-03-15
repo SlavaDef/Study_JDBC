@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb51b68f-77ca-4680-911e-c94cce41f6ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Way3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Way4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/WayFirst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/WaySecond.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Way5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Way3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Way3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Way4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Way4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +41,7 @@
     "Application.App.executor": "Run",
     "Application.Way3.executor": "Run",
     "Application.Way4.executor": "Run",
+    "Application.Way5.executor": "Run",
     "Application.WayFirst.executor": "Run",
     "Application.WaySecond.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -62,7 +58,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Way4">
+  <component name="RunManager" selected="Application.Way5">
     <configuration name="Way3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Way3" />
       <module name="Study_JDBS_Staitments" />
@@ -78,6 +74,19 @@
     </configuration>
     <configuration name="Way4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Way4" />
+      <module name="Study_JDBS_Staitments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Way5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Way5" />
       <module name="Study_JDBS_Staitments" />
       <extension name="coverage">
         <pattern>
@@ -117,6 +126,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Way5" />
         <item itemvalue="Application.Way4" />
         <item itemvalue="Application.Way3" />
         <item itemvalue="Application.WaySecond" />
@@ -132,7 +142,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710525158052</updated>
-      <workItem from="1710525159142" duration="6867000" />
+      <workItem from="1710525159142" duration="9299000" />
     </task>
     <servers />
   </component>

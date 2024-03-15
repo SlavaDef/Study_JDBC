@@ -2,10 +2,9 @@ package org.example;
 
 import java.sql.*;
 
-import static org.example.Constants.MSQL;
-import static org.example.Constants.SELECT_ALL;
+import static org.example.Constants.*;
 
-public class Way4 {  // приклад з бд MYSQL
+public class Way5 {
     public static void main(String[] args) throws SQLException {
         // jdbc:h2:mem: тут закодована вся інфа для DriverManager для підключення до бд
         // Connection  - отримання конекшену до бд
@@ -16,7 +15,8 @@ public class Way4 {  // приклад з бд MYSQL
             statement.execute("DROP TABLE IF EXISTS robot");
             statement.execute("CREATE TABLE robot(val INT, name VARCHAR(100))");
             insertData(connection);
-            readData(statement);
+            readData(statement, SELECT_ALL);
+            readData(statement, SELECT_SECOND);
 
         }
     }
@@ -45,10 +45,10 @@ public class Way4 {  // приклад з бд MYSQL
 
     }
 
-    private static void readData(Statement statement){
+    private static void readData(Statement statement, String sql){
 
         // executeQuery це вже для вибірки, повертає  ResultSet це обьект який нам повертає певні значенняз бд
-        try (ResultSet resultSet = statement.executeQuery(SELECT_ALL)) {
+        try (ResultSet resultSet = statement.executeQuery(sql)) {
             while (resultSet.next()) { //  resultSet.next() це по суті ітератор який повертає поля якщо є
                 int val = resultSet.getInt("val"); // 1
                 String name = resultSet.getString("name");

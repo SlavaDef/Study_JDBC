@@ -2,12 +2,14 @@ package org.example;
 
 import java.sql.*;
 
+import static org.example.Constants.H2;
+
 public class Way3 {
 
     public static void main(String[] args) throws SQLException {
         // jdbc:h2:mem: тут закодована вся інфа для DriverManager для підключення до бд
         // Connection  - отримання конекшену до бд
-        try (Connection connection = DriverManager.getConnection("jdbc:h2:mem:"); // jdbc:h2" база данних in memory
+        try (Connection connection = DriverManager.getConnection(H2); // jdbc:h2" база данних in memory
 
              Statement statement = connection.createStatement() ) {
             // далі завдяки стетментам створюємо таблицю
