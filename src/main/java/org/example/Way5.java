@@ -5,19 +5,26 @@ import java.sql.*;
 import static org.example.Constants.*;
 
 public class Way5 {
+
     public static void main(String[] args) throws SQLException {
         // jdbc:h2:mem: тут закодована вся інфа для DriverManager для підключення до бд
         // Connection  - отримання конекшену до бд
-        try (Connection connection = DriverManager.getConnection(MSQL,"root", "1234");
+        try (Connection con = DriverManager.getConnection(MSQL, "root", new Constants().getPAROLL());
+             Statement statement = con.createStatement()) {
+            createTables();
+            insertData(con);
+            readData(statement, SELECT_ALL);
+            readData(statement, SELECT_SECOND);
+        }
 
-             Statement statement = connection.createStatement() ) {
+    }
+
+    private static void createTables() throws SQLException {
+        try (Connection con = DriverManager.getConnection(MSQL, "root", new Constants().getPAROLL());
+             Statement statement = con.createStatement()) {
             // далі завдяки стетментам створюємо таблицю
             statement.execute("DROP TABLE IF EXISTS robot");
             statement.execute("CREATE TABLE robot(val INT, name VARCHAR(100))");
-            insertData(connection);
-            readData(statement, SELECT_ALL);
-            readData(statement, SELECT_SECOND);
-
         }
     }
 
@@ -25,8 +32,8 @@ public class Way5 {
         boolean autoComit = connection.getAutoCommit();
         connection.setAutoCommit(false); //знімаємо автопідтвердженя дій авто коміт
         // завдяки PreparedStatement легше і уникати дублювання
-        try ( PreparedStatement preparedStatement = connection.prepareStatement (
-                "INSERT  INTO  robot(val, name) VALUES (?, ?)") ) {
+        try (PreparedStatement preparedStatement = connection.prepareStatement(
+                "INSERT  INTO  robot(val, name) VALUES (?, ?)")) {
 // кожний запит в бд це окрема транзакція ніби відкрили - зберігли - закомітили чи зробили роулбек якщо помилка
             for (int i = 1; i < 12; i++) {
                 preparedStatement.setInt(1, i);
@@ -42,10 +49,9 @@ public class Way5 {
         }
 
 
-
     }
 
-    private static void readData(Statement statement, String sql){
+    private static void readData(Statement statement, String sql) {
 
         // executeQuery це вже для вибірки, повертає  ResultSet це обьект який нам повертає певні значенняз бд
         try (ResultSet resultSet = statement.executeQuery(sql)) {
