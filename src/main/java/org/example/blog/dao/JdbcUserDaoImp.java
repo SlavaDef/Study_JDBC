@@ -10,7 +10,7 @@ import java.util.Optional;
 
 import static org.example.robot.Constants.*;
 
-public class JdbcUserDaoImp implements UserDao {
+public class JdbcUserDaoImp implements UserDao{
 
     private final Connection connection;
     private final Statement st;
@@ -84,6 +84,8 @@ public class JdbcUserDaoImp implements UserDao {
         }
     }
 
+
+
     @Override
     public void deleteUser(User user) {
         try {
@@ -99,7 +101,7 @@ public class JdbcUserDaoImp implements UserDao {
         }
     }
 
-    @Override
+  /*  @Override
     public void updateUser(Long id, String fullName, String pseudonym, String email ) {
         try {
             try (PreparedStatement st = connection.prepareStatement(
@@ -116,7 +118,7 @@ public class JdbcUserDaoImp implements UserDao {
         } catch (SQLException e) {
             throw new IllegalStateException("Cant delete user with this id", e);
         }
-    }
+    } */
 
     @Override
     public void updateUser2(User user, Long id) {
@@ -142,12 +144,11 @@ public class JdbcUserDaoImp implements UserDao {
         daoImp.createTable();
         User user = new User("a","b","c");
         daoImp.save(user);
-      //  Optional<User> user1 = daoImp.getById(1L);
 
 
        System.out.println(daoImp.getAll());
 
-       daoImp.updateUser(1L,"2","4","test");
+      // daoImp.updateUser(1L,"2","4","test");
         System.out.println(daoImp.getAll());
         List<User> users = daoImp.getAll();
        daoImp.updateUser2(new User("44","4444","444@"),1L);

@@ -1,4 +1,8 @@
 package org.example.blog.dao;
 
-public interface PostDao {
+import org.example.blog.entyti.Post;
+
+public interface PostDao extends JenericDao<Post> {
+
+
 }

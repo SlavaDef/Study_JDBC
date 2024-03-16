@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb51b68f-77ca-4680-911e-c94cce41f6ef" name="Changes" comment="commit 8">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="fb51b68f-77ca-4680-911e-c94cce41f6ef" name="Changes" comment="commit 9">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/JenericDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/JdbcUserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/JdbcUserDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/PostDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/PostDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/blog/entyti/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/blog/entyti/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/robot/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/robot/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/JdbcUserDaoImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JdbcUserDaoImpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -67,7 +67,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.JdbcUserDaoImpTest.updateUser2Test">
+  <component name="RunManager" selected="JUnit.JdbcUserDaoImpTest">
     <configuration name="JdbcUserDaoImp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.blog.dao.JdbcUserDaoImp" />
       <module name="Study_JDBS_Staitments" />
@@ -122,9 +122,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JdbcUserDaoImpTest.updateUser2Test" />
-        <item itemvalue="Application.JdbcUserDaoImp" />
         <item itemvalue="JUnit.JdbcUserDaoImpTest" />
+        <item itemvalue="Application.JdbcUserDaoImp" />
+        <item itemvalue="JUnit.JdbcUserDaoImpTest.updateUser2Test" />
         <item itemvalue="JUnit.JdbcUserDaoImpTest.updateUserTest" />
         <item itemvalue="JUnit.JdbcUserDaoImpTest.getAll_shouldReturnSavedUsers" />
       </list>
@@ -149,7 +149,7 @@
       <workItem from="1710596686798" duration="13342000" />
       <workItem from="1710619709477" duration="27000" />
       <workItem from="1710619745314" duration="5560000" />
-      <workItem from="1710625716811" duration="1658000" />
+      <workItem from="1710625716811" duration="2665000" />
     </task>
     <task id="LOCAL-00001" summary="commit 2">
       <option name="closed" value="true" />
@@ -207,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710619892684</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="commit 9">
+      <option name="closed" value="true" />
+      <created>1710627602253</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1710627602253</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +229,7 @@
     <MESSAGE value="commit 6" />
     <MESSAGE value="commit 7" />
     <MESSAGE value="commit 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 8" />
+    <MESSAGE value="commit 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 9" />
   </component>
 </project>
