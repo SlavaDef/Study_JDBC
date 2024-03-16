@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb51b68f-77ca-4680-911e-c94cce41f6ef" name="Changes" comment="commit 2">
+    <list default="true" id="fb51b68f-77ca-4680-911e-c94cce41f6ef" name="Changes" comment="commit 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Way5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Way5.java" afterDir="false" />
     </list>
@@ -23,9 +23,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2djcvB32ErP5bDStuxLlDHaWhbz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -46,7 +46,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/Desktop/JDBS_Bank",
+    "last_opened_file_path": "C:/Users/Admin/Desktop/Progets/ItProgHomeworks/Study_JDBS_Staitments",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -139,7 +139,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710525158052</updated>
-      <workItem from="1710525159142" duration="10865000" />
+      <workItem from="1710525159142" duration="11214000" />
+      <workItem from="1710596686798" duration="994000" />
     </task>
     <task id="LOCAL-00001" summary="commit 2">
       <option name="closed" value="true" />
@@ -149,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710539330692</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit 3">
+      <option name="closed" value="true" />
+      <created>1710541040250</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710541040250</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +166,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 2" />
+    <MESSAGE value="commit 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 3" />
   </component>
 </project>
