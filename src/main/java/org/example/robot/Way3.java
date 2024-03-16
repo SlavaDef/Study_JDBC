@@ -1,8 +1,8 @@
-package org.example;
+package org.example.robot;
 
 import java.sql.*;
 
-import static org.example.Constants.H2;
+import static org.example.robot.Constants.H2;
 
 public class Way3 {
 

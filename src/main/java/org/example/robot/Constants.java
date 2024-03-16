@@ -1,4 +1,4 @@
-package org.example;
+package org.example.robot;
 
 public class Constants {
 

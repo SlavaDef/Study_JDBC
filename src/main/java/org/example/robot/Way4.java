@@ -1,9 +1,9 @@
-package org.example;
+package org.example.robot;
 
 import java.sql.*;
 
-import static org.example.Constants.MSQL;
-import static org.example.Constants.SELECT_ALL;
+import static org.example.robot.Constants.MSQL;
+import static org.example.robot.Constants.SELECT_ALL;
 
 public class Way4 {  // приклад з бд MYSQL
     public static void main(String[] args) throws SQLException {

@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb51b68f-77ca-4680-911e-c94cce41f6ef" name="Changes" comment="commit 3">
+    <list default="true" id="fb51b68f-77ca-4680-911e-c94cce41f6ef" name="Changes" comment="commit 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Way5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Way5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/robot/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Way3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/robot/Way3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Way4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/robot/Way4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Way5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/robot/Way5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WayFirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/robot/WayFirst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WaySecond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/robot/WaySecond.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +51,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/Desktop/Progets/ItProgHomeworks/Study_JDBS_Staitments",
+    "last_opened_file_path": "C:/Users/Admin/Desktop/Progets/ItProgHomeworks/DataJdbC",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -57,11 +62,11 @@
 }]]></component>
   <component name="RunManager" selected="Application.Way5">
     <configuration name="Way3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Way3" />
+      <option name="MAIN_CLASS_NAME" value="org.example.robot.Way3" />
       <module name="Study_JDBS_Staitments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.robot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -70,11 +75,11 @@
       </method>
     </configuration>
     <configuration name="Way4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Way4" />
+      <option name="MAIN_CLASS_NAME" value="org.example.robot.Way4" />
       <module name="Study_JDBS_Staitments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.robot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,11 +88,11 @@
       </method>
     </configuration>
     <configuration name="Way5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Way5" />
+      <option name="MAIN_CLASS_NAME" value="org.example.robot.Way5" />
       <module name="Study_JDBS_Staitments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.robot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,11 +101,11 @@
       </method>
     </configuration>
     <configuration name="WayFirst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.WayFirst" />
+      <option name="MAIN_CLASS_NAME" value="org.example.robot.WayFirst" />
       <module name="Study_JDBS_Staitments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.robot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,11 +114,11 @@
       </method>
     </configuration>
     <configuration name="WaySecond" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.WaySecond" />
+      <option name="MAIN_CLASS_NAME" value="org.example.robot.WaySecond" />
       <module name="Study_JDBS_Staitments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.robot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,7 +145,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710525158052</updated>
       <workItem from="1710525159142" duration="11214000" />
-      <workItem from="1710596686798" duration="994000" />
+      <workItem from="1710596686798" duration="2685000" />
     </task>
     <task id="LOCAL-00001" summary="commit 2">
       <option name="closed" value="true" />
@@ -158,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710541040250</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit 4">
+      <option name="closed" value="true" />
+      <created>1710598233576</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710598233576</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +180,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit 2" />
     <MESSAGE value="commit 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 3" />
+    <MESSAGE value="commit 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 4" />
   </component>
 </project>

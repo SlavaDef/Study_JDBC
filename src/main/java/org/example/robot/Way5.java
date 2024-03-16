@@ -1,19 +1,19 @@
-package org.example;
+package org.example.robot;
 
 import java.sql.*;
 
-import static org.example.Constants.*;
+import static org.example.robot.Constants.*;
 
 public class Way5 {
 
     public static void main(String[] args) throws SQLException {
 
-        startApp();
+        startTestApp();
 
     }
 
 
-    private static void startApp() {
+    private static void startTestApp() {
         try (Connection con = DriverManager.getConnection(MSQL, "root", new Constants().getPAROLL());
              Statement statement = con.createStatement()) {
             statement.execute("DROP TABLE IF EXISTS robot");
@@ -21,6 +21,12 @@ public class Way5 {
             insertData(con, 10);
             readData(statement, SELECT_ALL);
             readData(statement, SELECT_SECOND);
+            deleteById(con,3);
+            readData(statement, SELECT_ALL);
+            updateApartment(con, 5,"Robocop");
+            readData(statement, SELECT_ALL);
+
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -61,6 +67,30 @@ public class Way5 {
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
+        }
+    }
+
+    private static void deleteById(Connection conn, int id) {
+        try {
+            try (PreparedStatement st = conn.prepareStatement("DELETE FROM robot WHERE val=" + id)) {
+                st.executeUpdate();
+            }
+            System.out.println("Sucess!!!");
+
+        } catch (SQLException ex) {
+            throw new RuntimeException(ex);
+        }
+    }
+
+    private static void updateApartment(Connection conn, int id, String newName) {
+
+        try {
+            try (PreparedStatement st = conn.prepareStatement("UPDATE robot set name = ? where val =" + id)) {
+                st.setString(1, newName);
+                st.executeUpdate();
+            }
+        } catch (SQLException ex) {
+            throw new RuntimeException(ex);
         }
     }
 

@@ -1,20 +1,29 @@
-package org.example;
+package org.example.robot;
 
 import java.sql.*;
 
-public class WayFirst {
+public class WaySecond {
+
     public static void main(String[] args) throws SQLException {
         // jdbc:h2:mem: тут закодована вся інфа для DriverManager для підключення до бд
         // Connection  - отримання конекшену до бд
-       try ( Connection connection = DriverManager.getConnection("jdbc:h2:mem:"); // jdbc:h2" база данних in memory
-             // далі завдяки стетментам створюємо таблицю
-              Statement statement = connection.createStatement() ){ // завдяки try все закриється
+        try ( Connection connection = DriverManager.getConnection("jdbc:h2:mem:"); // jdbc:h2" база данних in memory
 
-            // execute використовується для створення і видалення, здебільшого і додавання
-            statement.execute("CREATE TABLE robot(val INT, name VARCHAR(100))");
-            statement.execute("INSERT  INTO  robot(val, name) VALUES (1, 'robot1')");
-            statement.execute("INSERT  INTO  robot(val, name) VALUES (2, 'robot2')");
-            statement.execute("INSERT  INTO  robot(val, name) VALUES (3, 'robot3')");
+             Statement statement = connection.createStatement() ) {
+            // далі завдяки стетментам створюємо таблицю
+             statement.execute("CREATE TABLE robot(val INT, name VARCHAR(100))");
+
+             // завдяки PreparedStatement легше і уникати дублювання
+             PreparedStatement preparedStatement = connection.prepareStatement (
+                     "INSERT  INTO  robot(val, name) VALUES (?, ?)") ;
+
+            // далі встановлюємо значення
+            for (int i = 1; i<10; i++) {
+                preparedStatement.setInt(1, i);
+                preparedStatement.setString(2, "robot"+i);
+                preparedStatement.execute();
+            }
+
             // executeQuery це вже для вибірки, повертає  ResultSet це обьект який нам повертає певні значенняз бд
             try (ResultSet resultSet = statement.executeQuery("SELECT val,name FROM robot")) {
                 while (resultSet.next()) { //  resultSet.next() це по суті ітератор який повертає поля якщо є
