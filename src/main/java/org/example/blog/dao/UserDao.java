@@ -17,4 +17,8 @@ public interface UserDao {
 
     void deleteUser(User user);
 
+    void updateUser(Long id, String fullName, String pseudonym, String email);
+
+    void updateUser2(User user, Long id);
+
 }

@@ -18,6 +18,12 @@ public class User {
     private String pseudonym;
     private String email;
 
+    public User(String fullName, String pseudonym, String email) {
+        this.fullName = fullName;
+        this.pseudonym = pseudonym;
+        this.email = email;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -28,5 +34,15 @@ public class User {
     @Override
     public int hashCode() {
         return Objects.hash(getUser_id(), getFullName(), getPseudonym(), getEmail());
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "user_id=" + user_id +
+                ", fullName='" + fullName + '\'' +
+                ", pseudonym='" + pseudonym + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }

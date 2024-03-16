@@ -16,7 +16,7 @@ public class Constants {
     public static final String CREATE_USERS = "CREATE TABLE users (user_id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY, " +
             "fullName VARCHAR(200) NOT NULL, pseudonym VARCHAR(20) NOT NULL," +
             "email VARCHAR(50) NOT NULL )";
-    public static final String INSERT_INTO_USERS = "INSERT INTO users(user_id,fullName,pseudonym,email) VALUES(?,?,?,?)";
+    public static final String INSERT_INTO_USERS = "INSERT INTO users(fullName,pseudonym,email) VALUES(?,?,?)";
 
 
     public String getPAROLL() {

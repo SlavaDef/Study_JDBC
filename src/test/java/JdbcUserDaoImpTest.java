@@ -65,4 +65,35 @@ public class JdbcUserDaoImpTest {
 
     }
 
+    @Test
+    void checkDeleteUser(){
+        User user = new User(1L, "BobG", "djBOB", "Bob@gmail.com");
+        daoImp.save(user);
+        daoImp.deleteUser(user);
+        Optional<User> actual = daoImp.getById(user.getUser_id()); //!
+        assertTrue(actual.isEmpty()); // !
+      //  assertFalse(actual.isPresent());
+    }
+
+    @Test
+    void updateUserTest(){ // TO-DO
+        User user = new User(1L, "BobG", "djBOB", "Bob@gmail.com");
+        daoImp.save(user);
+        daoImp.updateUser(1L,"BobG2", "djBOB2", "Bob2@gmail.com");
+        Optional<User> actual = daoImp.getById(user.getUser_id());
+        assertEquals(user.getUser_id(),1L);
+    }
+
+    @Test
+    void updateUser2Test(){ // TO-DO
+        User user = new User(1L, "BobG", "djBOB", "Bob@gmail.com");
+        daoImp.save(user);
+        User user2 = new User(1L,"BobG2", "djBOB2", "Bob2@gmail.com");
+        daoImp.updateUser2(user2,1L);
+        Optional<User> actual = daoImp.getById(user.getUser_id());
+        assertEquals(user2,actual.get());
+    }
+
+
+
 }
