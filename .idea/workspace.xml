@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb51b68f-77ca-4680-911e-c94cce41f6ef" name="Changes" comment="commit 4">
+    <list default="true" id="fb51b68f-77ca-4680-911e-c94cce41f6ef" name="Changes" comment="commit 5">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/JdbcUserDaoImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/blog/entyti/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/blog/entyti/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/JdbcUserDaoImpTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/robot/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Way3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/robot/Way3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Way4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/robot/Way4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Way5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/robot/Way5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WayFirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/robot/WayFirst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WaySecond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/robot/WaySecond.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/robot/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/robot/Constants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,7 @@
     "Application.Way5.executor": "Run",
     "Application.WayFirst.executor": "Run",
     "Application.WaySecond.executor": "Run",
+    "JUnit.JdbcUserDaoImpTest.getAll_shouldReturnSavedUsers.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -60,7 +62,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Way5">
+  <component name="RunManager" selected="JUnit.JdbcUserDaoImpTest.getAll_shouldReturnSavedUsers">
     <configuration name="Way3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.robot.Way3" />
       <module name="Study_JDBS_Staitments" />
@@ -100,19 +102,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WayFirst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.robot.WayFirst" />
-      <module name="Study_JDBS_Staitments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.robot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WaySecond" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.robot.WaySecond" />
       <module name="Study_JDBS_Staitments" />
@@ -126,13 +115,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JdbcUserDaoImpTest.getAll_shouldReturnSavedUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Study_JDBS_Staitments" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JdbcUserDaoImpTest" />
+      <option name="METHOD_NAME" value="getAll_shouldReturnSavedUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JdbcUserDaoImpTest.getAll_shouldReturnSavedUsers" />
         <item itemvalue="Application.Way5" />
         <item itemvalue="Application.Way4" />
         <item itemvalue="Application.Way3" />
         <item itemvalue="Application.WaySecond" />
-        <item itemvalue="Application.WayFirst" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +144,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710525158052</updated>
       <workItem from="1710525159142" duration="11214000" />
-      <workItem from="1710596686798" duration="2685000" />
+      <workItem from="1710596686798" duration="8016000" />
     </task>
     <task id="LOCAL-00001" summary="commit 2">
       <option name="closed" value="true" />
@@ -171,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710598233576</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit 5">
+      <option name="closed" value="true" />
+      <created>1710599737490</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710599737490</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +188,7 @@
     <MESSAGE value="commit 2" />
     <MESSAGE value="commit 3" />
     <MESSAGE value="commit 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 4" />
+    <MESSAGE value="commit 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 5" />
   </component>
 </project>
