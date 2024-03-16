@@ -13,6 +13,7 @@ import java.util.Objects;
 @AllArgsConstructor
 public class User {
 
+    private Long user_id;
     private String fullName;
     private String pseudonym;
     private String email;
@@ -21,11 +22,11 @@ public class User {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof User user)) return false;
-        return Objects.equals(getFullName(), user.getFullName()) && Objects.equals(getPseudonym(), user.getPseudonym()) && Objects.equals(getEmail(), user.getEmail());
+        return Objects.equals(getUser_id(), user.getUser_id()) && Objects.equals(getFullName(), user.getFullName()) && Objects.equals(getPseudonym(), user.getPseudonym()) && Objects.equals(getEmail(), user.getEmail());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getFullName(), getPseudonym(), getEmail());
+        return Objects.hash(getUser_id(), getFullName(), getPseudonym(), getEmail());
     }
 }

@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb51b68f-77ca-4680-911e-c94cce41f6ef" name="Changes" comment="commit 6">
+    <list default="true" id="fb51b68f-77ca-4680-911e-c94cce41f6ef" name="Changes" comment="commit 7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/JdbcUserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/JdbcUserDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/blog/entyti/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/blog/entyti/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/robot/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/robot/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/JdbcUserDaoImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JdbcUserDaoImpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,57 +36,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Run",
-    "Application.Way3.executor": "Run",
-    "Application.Way4.executor": "Run",
-    "Application.Way5.executor": "Run",
-    "Application.WayFirst.executor": "Run",
-    "Application.WaySecond.executor": "Run",
-    "JUnit.JdbcUserDaoImpTest.getAll_shouldReturnSavedUsers.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/Desktop/Progets/ItProgHomeworks/DataJdbC",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Way3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Way4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Way5.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WayFirst.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WaySecond.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JdbcUserDaoImpTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JdbcUserDaoImpTest.getAll_shouldReturnSavedUsers.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JdbcUserDaoImpTest.getEmptyOptionalIfNoUserFound.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JdbcUserDaoImpTest.getIdIfPresentInBd.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/Progets/ItProgHomeworks/DataJdbC&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.JdbcUserDaoImpTest.getAll_shouldReturnSavedUsers">
-    <configuration name="Way3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.robot.Way3" />
-      <module name="Study_JDBS_Staitments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.robot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Way4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.robot.Way4" />
-      <module name="Study_JDBS_Staitments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.robot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}</component>
+  <component name="RunManager" selected="JUnit.JdbcUserDaoImpTest">
     <configuration name="Way5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.robot.Way5" />
       <module name="Study_JDBS_Staitments" />
@@ -97,15 +77,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WaySecond" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.robot.WaySecond" />
+    <configuration name="JdbcUserDaoImpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Study_JDBS_Staitments" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.robot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JdbcUserDaoImpTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,15 +96,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JdbcUserDaoImpTest.getEmptyOptionalIfNoUserFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Study_JDBS_Staitments" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JdbcUserDaoImpTest" />
+      <option name="METHOD_NAME" value="getEmptyOptionalIfNoUserFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcUserDaoImpTest.getIdIfPresentInBd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Study_JDBS_Staitments" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JdbcUserDaoImpTest" />
+      <option name="METHOD_NAME" value="getIdIfPresentInBd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JdbcUserDaoImpTest" />
+        <item itemvalue="JUnit.JdbcUserDaoImpTest.getEmptyOptionalIfNoUserFound" />
+        <item itemvalue="JUnit.JdbcUserDaoImpTest.getIdIfPresentInBd" />
         <item itemvalue="JUnit.JdbcUserDaoImpTest.getAll_shouldReturnSavedUsers" />
         <item itemvalue="Application.Way5" />
-        <item itemvalue="Application.Way4" />
-        <item itemvalue="Application.Way3" />
-        <item itemvalue="Application.WaySecond" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-4caba194b151-107bc6b7" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -139,7 +142,8 @@
       <option name="presentableId" value="Default" />
       <updated>1710525158052</updated>
       <workItem from="1710525159142" duration="11214000" />
-      <workItem from="1710596686798" duration="8715000" />
+      <workItem from="1710596686798" duration="13342000" />
+      <workItem from="1710619709477" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="commit 2">
       <option name="closed" value="true" />
@@ -181,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710605056226</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit 7">
+      <option name="closed" value="true" />
+      <created>1710607360390</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710607360390</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +205,7 @@
     <MESSAGE value="commit 4" />
     <MESSAGE value="commit 5" />
     <MESSAGE value="commit 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 6" />
+    <MESSAGE value="commit 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 7" />
   </component>
 </project>
