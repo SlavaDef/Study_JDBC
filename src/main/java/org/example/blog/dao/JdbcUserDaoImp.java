@@ -87,7 +87,7 @@ public class JdbcUserDaoImp implements UserDao{
 
 
     @Override
-    public void deleteUser(User user) {
+    public void deleteEntyti(User user) {
         try {
             try (PreparedStatement st = connection.prepareStatement("DELETE FROM users WHERE user_id=?")) {
                 st.setLong(1, user.getUser_id());
@@ -121,7 +121,7 @@ public class JdbcUserDaoImp implements UserDao{
     }
 
     @Override
-    public void updateUser2(User user, Long id) {
+    public void updateEntyti(User user, Long id) {
         try {
             try (PreparedStatement st = connection.prepareStatement(
                     "UPDATE users SET fullName=?,pseudonym=?,email=? WHERE user_id ="+id)) {
@@ -135,7 +135,7 @@ public class JdbcUserDaoImp implements UserDao{
             System.out.println(" User was updated");
 
         } catch (SQLException e) {
-            throw new IllegalStateException("Cant delete user with this id", e);
+            throw new IllegalStateException("Cant update user with this id", e);
         }
     }
 
@@ -151,7 +151,7 @@ public class JdbcUserDaoImp implements UserDao{
       // daoImp.updateUser(1L,"2","4","test");
         System.out.println(daoImp.getAll());
         List<User> users = daoImp.getAll();
-       daoImp.updateUser2(new User("44","4444","444@"),1L);
+       daoImp.updateEntyti(new User("44","4444","444@"),1L);
         System.out.println(daoImp.getAll());
     }
 }

@@ -14,7 +14,7 @@ public interface JenericDao <T> {
 
     Optional<T> getById(Long id); // обгортка щоб не повертати нулі
 
-    void deleteUser(T entity);
+    void deleteEntyti(T entity);
 
-    void updateUser2(T entity, Long id);
+    void updateEntyti(T entity, Long id);
 }

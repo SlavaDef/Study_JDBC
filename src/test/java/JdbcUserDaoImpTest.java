@@ -69,7 +69,7 @@ public class JdbcUserDaoImpTest {
     void checkDeleteUser(){
         User user = new User(1L, "BobG", "djBOB", "Bob@gmail.com");
         daoImp.save(user);
-        daoImp.deleteUser(user);
+        daoImp.deleteEntyti(user);
         Optional<User> actual = daoImp.getById(user.getUser_id()); //!
         assertTrue(actual.isEmpty()); // !
       //  assertFalse(actual.isPresent());
@@ -89,7 +89,7 @@ public class JdbcUserDaoImpTest {
         User user = new User(1L, "BobG", "djBOB", "Bob@gmail.com");
         daoImp.save(user);
         User user2 = new User(1L,"BobG2", "djBOB2", "Bob2@gmail.com");
-        daoImp.updateUser2(user2,1L);
+        daoImp.updateEntyti(user2,1L);
         Optional<User> actual = daoImp.getById(user.getUser_id());
         assertEquals(user2,actual.get());
     }

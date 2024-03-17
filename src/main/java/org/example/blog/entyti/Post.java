@@ -25,6 +25,11 @@ public class Post {
         this.createdIn = createdIn;
     }
 
+    public Post(String text, LocalDateTime createdIn) {
+        this.text = text;
+        this.createdIn = createdIn;
+    }
+
     @Override
     public String toString() {
         return "Post{" +
