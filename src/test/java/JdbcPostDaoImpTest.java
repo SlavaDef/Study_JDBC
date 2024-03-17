@@ -14,14 +14,12 @@ import static org.junit.jupiter.api.Assertions.*;
 public class JdbcPostDaoImpTest {
 
     private final JdbcPostDaoImpl postDao;
-    private final JdbcUserDaoImp userDao;
-
 
     User user = new User(1L, "some name", "test", "c@");
     User user2 = new User(2L, "some name2", "test", "c@gmail");
 
     public JdbcPostDaoImpTest() throws SQLException {
-        userDao = new JdbcUserDaoImp();
+        JdbcUserDaoImp  userDao = new JdbcUserDaoImp();
         postDao = new JdbcPostDaoImpl();
         userDao.createTable();
         postDao.createTable();
@@ -33,7 +31,6 @@ public class JdbcPostDaoImpTest {
     void getAll_shouldReturnSavedPosts() {
         LocalDateTime time = LocalDateTime.of(2024, 3, 17, 12, 5);
         LocalDateTime time2 = LocalDateTime.of(2024, 3, 17, 13, 15);
-
 
         List<Post> posts = List.of(new Post(1L, "some text", user, time),
                 new Post(2L, "some text2", user2, time2));
@@ -50,7 +47,6 @@ public class JdbcPostDaoImpTest {
     void checkDeletePost() {
         LocalDateTime time = LocalDateTime.now();
         Post post = new Post(1L, "some text", user, time);
-        userDao.save(user);
         postDao.save(post);
         postDao.deleteEntyti(post);
         Optional<Post> actual = postDao.getById(user.getUser_id()); //!
@@ -63,11 +59,9 @@ public class JdbcPostDaoImpTest {
         assertFalse(res.isPresent()); // перевірка що такого нема
 
     }
-
     @Test
     void getIdIfPresentInBd() {
         LocalDateTime time = LocalDateTime.of(2024, 3, 17, 12, 5);
-        userDao.save(user);
         Post post = new Post(1L, "some text", user, time);
         postDao.save(post);
         Optional<Post> actual = postDao.getById(post.getPost_id()); //!
@@ -79,7 +73,6 @@ public class JdbcPostDaoImpTest {
     void updateUser2Test() {
         LocalDateTime time = LocalDateTime.of(2024, 3, 17, 12, 5);
         LocalDateTime time2 = LocalDateTime.of(2024, 3, 17, 15, 25);
-        userDao.save(user2);
         Post post = new Post(2L, "some text", user2, time);
         postDao.save(post);
         Post post2 = new Post(2L, "new text", user2, time2);

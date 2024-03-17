@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb51b68f-77ca-4680-911e-c94cce41f6ef" name="Changes" comment="commit 12">
-      <change beforePath="$PROJECT_DIR$/src/test/java/JdbcUserDaoImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JdbcUserDaoImpTest.java" afterDir="false" />
+    <list default="true" id="fb51b68f-77ca-4680-911e-c94cce41f6ef" name="Changes" comment="commit 13">
+      <change beforePath="$PROJECT_DIR$/src/test/java/JdbcPostDaoImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JdbcPostDaoImpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,32 +70,41 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.JdbcUserDaoImpTest.updateUser2Test">
-    <configuration name="JdbcUserDaoImpTest.checkDeleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.JdbcPostDaoImpTest">
+    <configuration name="JdbcPostDaoImpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Study_JDBS_Staitments" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JdbcUserDaoImpTest" />
-      <option name="METHOD_NAME" value="checkDeleteUser" />
+      <option name="MAIN_CLASS_NAME" value="JdbcPostDaoImpTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcPostDaoImpTest.checkDeletePost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Study_JDBS_Staitments" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JdbcPostDaoImpTest" />
+      <option name="METHOD_NAME" value="checkDeletePost" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcUserDaoImpTest.getEmptyOptionalIfNoUserFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcPostDaoImpTest.getIdIfPresentInBd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Study_JDBS_Staitments" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JdbcUserDaoImpTest" />
-      <option name="METHOD_NAME" value="getEmptyOptionalIfNoUserFound" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JdbcUserDaoImpTest.getIdIfPresentInBd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Study_JDBS_Staitments" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JdbcUserDaoImpTest" />
+      <option name="MAIN_CLASS_NAME" value="JdbcPostDaoImpTest" />
       <option name="METHOD_NAME" value="getIdIfPresentInBd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcPostDaoImpTest.updateUser2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Study_JDBS_Staitments" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JdbcPostDaoImpTest" />
+      <option name="METHOD_NAME" value="updateUser2Test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -111,23 +120,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcUserDaoImpTest.updateUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Study_JDBS_Staitments" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JdbcUserDaoImpTest" />
-      <option name="METHOD_NAME" value="updateUserTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JdbcPostDaoImpTest" />
+        <item itemvalue="JUnit.JdbcPostDaoImpTest.updateUser2Test" />
+        <item itemvalue="JUnit.JdbcPostDaoImpTest.getIdIfPresentInBd" />
+        <item itemvalue="JUnit.JdbcPostDaoImpTest.checkDeletePost" />
         <item itemvalue="JUnit.JdbcUserDaoImpTest.updateUser2Test" />
-        <item itemvalue="JUnit.JdbcUserDaoImpTest.updateUserTest" />
-        <item itemvalue="JUnit.JdbcUserDaoImpTest.checkDeleteUser" />
-        <item itemvalue="JUnit.JdbcUserDaoImpTest.getEmptyOptionalIfNoUserFound" />
-        <item itemvalue="JUnit.JdbcUserDaoImpTest.getIdIfPresentInBd" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +150,7 @@
       <workItem from="1710619709477" duration="27000" />
       <workItem from="1710619745314" duration="5560000" />
       <workItem from="1710625716811" duration="2994000" />
-      <workItem from="1710665131229" duration="11126000" />
+      <workItem from="1710665131229" duration="11930000" />
     </task>
     <task id="LOCAL-00001" summary="commit 2">
       <option name="closed" value="true" />
@@ -241,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710679500675</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="commit 13">
+      <option name="closed" value="true" />
+      <created>1710679688991</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1710679688991</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +266,7 @@
     <MESSAGE value="commit 10" />
     <MESSAGE value="commit 11" />
     <MESSAGE value="commit 12" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 12" />
+    <MESSAGE value="commit 13" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 13" />
   </component>
 </project>
