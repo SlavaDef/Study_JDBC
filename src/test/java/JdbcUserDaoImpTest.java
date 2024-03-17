@@ -1,7 +1,6 @@
 import org.example.blog.dao.JdbcUserDaoImp;
 import org.example.blog.entyti.User;
 import org.example.robot.Constants;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
 import java.sql.Connection;
@@ -17,6 +16,8 @@ import static org.junit.jupiter.api.Assertions.*;
 public class JdbcUserDaoImpTest {
 
     private final JdbcUserDaoImp daoImp;
+
+    User user = new User(1L, "BobG", "djBOB", "Bob@gmail.com");
 
     public JdbcUserDaoImpTest() throws SQLException {
         daoImp = new JdbcUserDaoImp();
@@ -51,7 +52,6 @@ public class JdbcUserDaoImpTest {
     @Test
     void getIdIfPresentInBd(){
 
-        User user = new User(1L, "BobG", "djBOB", "Bob@gmail.com");
         daoImp.save(user);
         Optional<User> actual = daoImp.getById(user.getUser_id()); //!
         assertTrue(actual.isPresent()); // !
@@ -67,7 +67,6 @@ public class JdbcUserDaoImpTest {
 
     @Test
     void checkDeleteUser(){
-        User user = new User(1L, "BobG", "djBOB", "Bob@gmail.com");
         daoImp.save(user);
         daoImp.deleteEntyti(user);
         Optional<User> actual = daoImp.getById(user.getUser_id()); //!
@@ -77,7 +76,7 @@ public class JdbcUserDaoImpTest {
 
     @Test
     void updateUserTest(){ // TO-DO
-        User user = new User(1L, "BobG", "djBOB", "Bob@gmail.com");
+
         daoImp.save(user);
         daoImp.updateUser(1L,"BobG2", "djBOB2", "Bob2@gmail.com");
         Optional<User> actual = daoImp.getById(user.getUser_id());
@@ -86,14 +85,11 @@ public class JdbcUserDaoImpTest {
 
     @Test
     void updateUser2Test(){ // TO-DO
-        User user = new User(1L, "BobG", "djBOB", "Bob@gmail.com");
         daoImp.save(user);
         User user2 = new User(1L,"BobG2", "djBOB2", "Bob2@gmail.com");
         daoImp.updateEntyti(user2,1L);
         Optional<User> actual = daoImp.getById(user.getUser_id());
         assertEquals(user2,actual.get());
     }
-
-
 
 }
