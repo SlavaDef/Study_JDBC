@@ -75,14 +75,14 @@ public class JdbcUserDaoImpTest {
       //  assertFalse(actual.isPresent());
     }
 
-   /* @Test
+    @Test
     void updateUserTest(){ // TO-DO
         User user = new User(1L, "BobG", "djBOB", "Bob@gmail.com");
         daoImp.save(user);
         daoImp.updateUser(1L,"BobG2", "djBOB2", "Bob2@gmail.com");
         Optional<User> actual = daoImp.getById(user.getUser_id());
         assertEquals(user.getUser_id(),1L);
-    } */
+    }
 
     @Test
     void updateUser2Test(){ // TO-DO

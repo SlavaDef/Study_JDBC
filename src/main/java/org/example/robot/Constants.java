@@ -22,4 +22,10 @@ public class Constants {
     public String getPAROLL() {
         return PAROLL;
     }
+
+    public static final String CREATE_POST = "CREATE TABLE post (post_id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY, " +
+            "text TEXT NOT NULL, author BIGINT REFERENCES users(user_id)," +
+            "createdIn TIMESTAMP )";
+
+    public static final String INSERT_INTO_POST = "INSERT INTO post(post_id,text,author,createdIn) VALUES(?,?,?,?)";
 }

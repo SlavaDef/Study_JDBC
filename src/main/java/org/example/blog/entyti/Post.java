@@ -19,6 +19,22 @@ public class Post {
     private User author;
     private LocalDateTime createdIn;
 
+    public Post(String text, User author, LocalDateTime createdIn) {
+        this.text = text;
+        this.author = author;
+        this.createdIn = createdIn;
+    }
+
+    @Override
+    public String toString() {
+        return "Post{" +
+                "post_id=" + post_id +
+                ", text='" + text + '\'' +
+                ", author=" + author +
+                ", createdIn=" + createdIn +
+                '}';
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -7,4 +7,6 @@ import java.util.Optional;
 
 public interface UserDao extends JenericDao<User>{
 
+    void updateUser(Long id, String fullName, String pseudonym, String email );
+
 }

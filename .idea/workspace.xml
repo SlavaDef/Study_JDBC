@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb51b68f-77ca-4680-911e-c94cce41f6ef" name="Changes" comment="commit 9">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/JenericDao.java" afterDir="false" />
+    <list default="true" id="fb51b68f-77ca-4680-911e-c94cce41f6ef" name="Changes" comment="commit 10">
+      <change afterPath="$PROJECT_DIR$/src/test/java/JdbcPostDaoImpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/JdbcPostDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/JdbcPostDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/JdbcUserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/JdbcUserDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/PostDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/PostDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/blog/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/blog/entyti/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/blog/entyti/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/robot/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/robot/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/JdbcUserDaoImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JdbcUserDaoImpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -39,12 +42,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+    "Application.JdbcPostDaoImpl.executor": "Run",
     "Application.JdbcUserDaoImp.executor": "Run",
     "Application.Way3.executor": "Run",
     "Application.Way4.executor": "Run",
     "Application.Way5.executor": "Run",
     "Application.WayFirst.executor": "Run",
     "Application.WaySecond.executor": "Run",
+    "JUnit.JdbcPostDaoImpTest.executor": "Run",
+    "JUnit.JdbcPostDaoImpTest.getAll_shouldReturnSavedPosts.executor": "Run",
     "JUnit.JdbcUserDaoImpTest.checkDeleteUser.executor": "Run",
     "JUnit.JdbcUserDaoImpTest.executor": "Run",
     "JUnit.JdbcUserDaoImpTest.getAll_shouldReturnSavedUsers.executor": "Run",
@@ -67,7 +73,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.JdbcUserDaoImpTest">
+  <component name="RunManager" selected="JUnit.JdbcPostDaoImpTest.getAll_shouldReturnSavedPosts">
+    <configuration name="JdbcPostDaoImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.blog.dao.JdbcPostDaoImpl" />
+      <module name="Study_JDBS_Staitments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.blog.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JdbcUserDaoImp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.blog.dao.JdbcUserDaoImp" />
       <module name="Study_JDBS_Staitments" />
@@ -81,6 +100,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JdbcPostDaoImpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Study_JDBS_Staitments" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JdbcPostDaoImpTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcPostDaoImpTest.getAll_shouldReturnSavedPosts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Study_JDBS_Staitments" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JdbcPostDaoImpTest" />
+      <option name="METHOD_NAME" value="getAll_shouldReturnSavedPosts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JdbcUserDaoImpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Study_JDBS_Staitments" />
       <option name="PACKAGE_NAME" value="" />
@@ -90,43 +128,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcUserDaoImpTest.getAll_shouldReturnSavedUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Study_JDBS_Staitments" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JdbcUserDaoImpTest" />
-      <option name="METHOD_NAME" value="getAll_shouldReturnSavedUsers" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JdbcUserDaoImpTest.updateUser2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Study_JDBS_Staitments" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JdbcUserDaoImpTest" />
-      <option name="METHOD_NAME" value="updateUser2Test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JdbcUserDaoImpTest.updateUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Study_JDBS_Staitments" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JdbcUserDaoImpTest" />
-      <option name="METHOD_NAME" value="updateUserTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JdbcPostDaoImpTest.getAll_shouldReturnSavedPosts" />
+        <item itemvalue="JUnit.JdbcPostDaoImpTest" />
+        <item itemvalue="Application.JdbcPostDaoImpl" />
         <item itemvalue="JUnit.JdbcUserDaoImpTest" />
         <item itemvalue="Application.JdbcUserDaoImp" />
-        <item itemvalue="JUnit.JdbcUserDaoImpTest.updateUser2Test" />
-        <item itemvalue="JUnit.JdbcUserDaoImpTest.updateUserTest" />
-        <item itemvalue="JUnit.JdbcUserDaoImpTest.getAll_shouldReturnSavedUsers" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +157,8 @@
       <workItem from="1710596686798" duration="13342000" />
       <workItem from="1710619709477" duration="27000" />
       <workItem from="1710619745314" duration="5560000" />
-      <workItem from="1710625716811" duration="2665000" />
+      <workItem from="1710625716811" duration="2994000" />
+      <workItem from="1710665131229" duration="6142000" />
     </task>
     <task id="LOCAL-00001" summary="commit 2">
       <option name="closed" value="true" />
@@ -215,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710627602253</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit 10">
+      <option name="closed" value="true" />
+      <created>1710628674172</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1710628674172</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +247,7 @@
     <MESSAGE value="commit 7" />
     <MESSAGE value="commit 8" />
     <MESSAGE value="commit 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 9" />
+    <MESSAGE value="commit 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 10" />
   </component>
 </project>

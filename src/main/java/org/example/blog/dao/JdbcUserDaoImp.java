@@ -101,7 +101,7 @@ public class JdbcUserDaoImp implements UserDao{
         }
     }
 
-  /*  @Override
+    @Override
     public void updateUser(Long id, String fullName, String pseudonym, String email ) {
         try {
             try (PreparedStatement st = connection.prepareStatement(
@@ -118,7 +118,7 @@ public class JdbcUserDaoImp implements UserDao{
         } catch (SQLException e) {
             throw new IllegalStateException("Cant delete user with this id", e);
         }
-    } */
+    }
 
     @Override
     public void updateUser2(User user, Long id) {
